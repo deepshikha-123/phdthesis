@@ -379,6 +379,36 @@ All these methods have their origin in Explicit Euler Method. Some elementary mo
     \item{\textbf{Hamiltonian System} : Solution of hamiltonian system is also periodic because in this case hamiltonian is an invariant. For hamiltonian system, Stormer Verlet method shows exact qualtitatve behaviour while other methods do not.}\\
     
 \end{itemize}
+\chapter{CHAPTER 2\\NUMERICAL INTEGRATORS}
+This chapter covers some advanced numerical techniques than previous ones and these are:\\
+\begin{enumerate}
+    \item{Runge kutta method}
+    \item{Collocation method}
+    \item{Discontinuous collocation method}
+    \item{partitioned runge kutta method}
+    \item{Nystrom method}
+    \item{Composition method}
+    \item{Splitting method}
+\end{enumerate}
+Every methods have their own importance so now we will elaborate all the methods.
+\begin{enumerate}
+    \item {\textbf{Runge kutta method:} The main feature of the runge kutta method is averaging the four slopes at three points of the interval [a,b]. First slope is taken at a, second and third at midpoint of the interval i.e. $(a+b)/2$  and the last fourth is taken at b.}
+    \item{\textbf{Collocation method:} Among all numerical techniques for numerical integration, Collocation method is quite specific. Since every method used to get a discrete set of approximation whether Collocation method gives a continuous set of approximation. So let us assume that we have to find area under the curv f(x) (i.e. $\int_a^b{f(x) dx}$). In Collocation method, we are concerned about finding f(x) on [a,b]. First we choose three points : a, (a+b)/2 and b and the connecting these three points through a second degree polynomial will give collocation polynomial. Collocation polynomial is nothing but approximated f(x). This method is known as Collocation method.\\}
+    \item{\textbf{Discontinuous collocation method: } The discontinuous collocation methods are equivalent to implicit Runge kutta method.}
+    \item{\textbf{Partitioned runge kutta method:} Partitioned runge kutta method is better approach to solving second order differential equation using runge kutta scheme. Here the partitioned means that separate treatment for two or more dependent variable with respect to one independent variable. Symplectic euler and Stormer verlet are also partitioned type method.}
+    \item{\textbf{Nystrom method:} Modifying partitioned runge kutta method in a certain way (as changing the coefficient) Nystrom method can be obtained.}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+\end{enumerate}
 
 
 
