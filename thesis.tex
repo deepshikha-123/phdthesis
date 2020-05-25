@@ -4,8 +4,10 @@
 %\documentclass[BTech]{iitmdiss}
 \usepackage{times}
  \usepackage{t1enc}
-
-
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{biblatex}
+\addbibresource{bib.bib}
 \usepackage{epstopdf}
 \usepackage[hypertex]{hyperref} % hyperlinks for references.
 \usepackage{amsmath} % easier math formulae, align, subequations \ldots
@@ -20,7 +22,7 @@
 
 \author{Deepshikha Mishra}
 
-\date{August 2023}
+\date{}
 \department{MATHEMATICS AND COMPUTING}
 
 %\nocite{*}
@@ -47,7 +49,7 @@ diploma.
 \noindent Research Guide \\ 
 \noindent Assistent Professor \\
 \noindent Dept. of Mathematics and computing\\
-\noindent IIT-DHANBAD, 826 004 \\
+\noindent IIT(ISM)DHANBAD, 826 004 \\
 } 
 \hspace*{1.0in} 
 %\parbox{2.5in}{
@@ -325,43 +327,50 @@ with the documentation of the respective packages.
 \appendix
 \chapter{TIMELINE FOR PHD}
 
-Having my long term goals in my mind, my aim is to work towards a good in
-mathematics. Next five years, I am looking forward to focus on research areas that
-can extend the availability and usefulness of technology and its advancement to our
-society directly. I believe that this will certainly enhance their quality of livings.
-My first research problem is based on geometric numerical integration of ordinary
-differential equation.
-I divide my time period in ten sections(semester wise).
+Having my long term goals in my mind, my aim is to work towards a good in mathematics. Next four years, I am looking forward to focus on research areas that can extend the availability and usefulness of technology and its advancement to our society directly. I believe that this will certainly enhance their quality of livings.I will carry out my Ph.D. in 4 years furthermore I will go-ahead for postdoc.In these four years of Ph.D. My first research problem, as well as the first research paper, will be based on geometric numerical integration of ordinary differential equations. After completing the first paper, I will work on the rest. I don't have any approach for my second and third research problem right now. Here I am breaking my 4 years time period in 4 sections(year-wise) according to which I will move towards my purpose.
+.
 
-    {\textbf{FIRST SEMESTER}:{ In this duration I have to complete the following tasks.}\\
+    {\textbf{FIRST YEAR}:{ In this duration I have to complete the followings:.}\\
     \begin{itemize}
- 
-    
-    \item{Complete five subjects (analysis, numerical method, differential equation, re
-search methodology, research and technical communication) of the coursework.}\\
-\item{Learn some basic tools and programming language as: MATLAB, PYTHON,
-GIT, COMMAND LINE, LATEX.}\\
-\item{Try to improve my writing skill, communication skill, and also my English
-language.}\\
-\item{Complete at least two chapter of the book geometric numerical integration with
-short notes.}\\
-\item{With the help of litrature review, try to find some new ideas.}\\
+    \item{complete one-year coursework  which is just for recapitulation of my previously acquired mathematical knowledge in the process of qualification of undergraduate and postgraduate degrees and the coursework subjects are:
+}\\
 \end{itemize}
-{\textbf{SECOND SEMESTER}:{In second semester, I will complete followings.}\\
+\begin{enumerate}
+    \item { Analysis}
+    \item{ Differential equation}
+    \item{ Numerical method}
+    \item{ Research methodology}
+    \item{ Research and technical communication}
+    \item{ Advanced numerical method}
+    \item{ Modelling and simulation}
+    \item{ Nonlinear dynamics}
+    \item{ Mathematical biology}
+\end{enumerate}
 \begin{itemize}
+    \item {Learn some basic tools and programming language as: MATLAB (using as a tool for visualization, computation, and problem-solving), PYTHON (For getting a perfect scientific programming environment and using its open source libraries Numpy/Scipy for numerical operations MatPlotlib for plotting), VERSION CONTROL SYSTEM GIT (for collaboration and retain work history), COMMAND LINE (just for more suitability and advancement), LATEX(for typing research article, thesis or any scientific document), Jabref.org (Using as a reference manager).}\\
     
-
-    \item{Complete the remaining coursework.\\
- \item{ Complete the book geometric numerical integration with short notes.}\\
- \item{Getting my research problem and a rough idea about writing research paper.}\\
- \item{At last of this semester (June-2020) try to start writing research paper.}\\
- 
+    \item{Try to improve my scientific writing, communication skill, and the most important English language.}\\
+    \item{Complete at least five chapter of the book geometric numerical integration with collection of some new ideas.
+}\\
+\item{Getting my research problem and a rough idea about writing a research paper.}\\
 \end{itemize}
-\textbf{THIRD SEMESTER} : In third semester,I have to do a paper at any cost.I want to do my first paper on
-ACTA NUMERICA JOURNAL. Throughout this time, my entire focus will be on first paper
-and I will do it diligently.\\
 \par
-\textbf{FOURTH SEMESTER} :After the completion of first paper, my focus will be on presenting the paper on some international conference. Meanwhile I will also think about my second research problem. In this time span I will also try to attend at least a workshop to explore some new ideas.}\\
+
+\textbf{SECOND YEAR}:
+      
+      In the second year, I will start writing my first paper also will complete it in the same year. I want to do my first paper on ACTA NUMERICA JOURNAL. Throughout this time, my entire focus will be on the first paper and I will do it diligently. After the completion of the first paper, my focus will be on presenting the paper at a good international conference. Meanwhile I will also think about my second research problem. In this time span I will also try to attend at least a workshop to explore some new ideas.
+      \par
+       
+\textbf{THIRD YEAR} :
+
+
+       This year will be going to the most critical year for me. In this year, I will have to do two papers only then I will be able to submit my thesis in the fourth year.
+
+\par
+\textbf{FOURTH YEAR} :
+
+       Finally, this is last year (final year). Since the final year is all about preparing for the submission of the thesis therefore in the first six months of the year, I have to complete my thesis and will present it to you to review it. At the end of the year, I will submit my thesis and will give the final presentation.
+
 
 \chapter{CHAPTER 1\\ EXAMPLES AND NUMERICAL EXPERIMENTS}
 Any mathematical model associated with real world situation can be categorized in two forms.Model is either in form of system of differential equation (flows of the system) or system of difference equation(iterated maps).In this chapter we will make a better understanding of system of ordinary differential equation, more specifically system of first order ordinary differential equation. The mathematical model modeled by us often occurs in nonlinear form.Evidently, these problems can not be done analytically.So In this segment we will analyze some numerical experiments and will try to do something new.
@@ -376,9 +385,11 @@ There are some fundamental techniques to solve system of first order ordinary di
 All these methods have their origin in Explicit Euler Method. Some elementary models  defined in this chapter by which we can understand these methods well.
 \begin{itemize}
     \item {\textbf{The Lotka Volterra Model} : This model describes the dynamics of biological system in which two species interact as prey and predator. Solution of lotka volterra model is periodic because of existence of invariant and the most important thing is that the explicit and implicit Euler methods show wrong qualitative behaviour while the symplectic euler method preserves the exact solution.}\\
-    \item{\textbf{Hamiltonian System} : Solution of hamiltonian system is also periodic because in this case hamiltonian is an invariant. For hamiltonian system, Stormer Verlet method shows exact qualtitatve behaviour while other methods do not.}\\
+    \item{\textbf{Hamiltonian System} : Solution of hamiltonian system is also periodic because in this case hamiltonian is an invariant. For hamiltonian system, Stormer Verlet method shows exact qualtitatve\cite{cCivril2008} behaviour while other methods do not.}\\
+    
     
 \end{itemize}
+
 \chapter{CHAPTER 2\\NUMERICAL INTEGRATORS}
 This chapter covers some advanced numerical techniques than previous ones and these are:\\
 \begin{enumerate}
@@ -409,16 +420,12 @@ Every methods have their own importance so now we will elaborate all the methods
     
     
 \end{enumerate}
-
-
-
-
+    
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bibliography.
 
-\begin{singlespace}
-  \bibliography{refs}
-\end{singlespace}
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -432,6 +439,8 @@ Every methods have their own importance so now we will elaborate all the methods
   \newblock {\em Journal}, Volume,
   Page, (year).
 \end{enumerate}  
+\printbibliography
 
 \end{document}
+
 
